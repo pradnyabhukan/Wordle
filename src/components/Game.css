@@ -1,4 +1,4 @@
-.matrix{
+.board{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -8,13 +8,46 @@
 .row{
     display: flex;
     flex-direction: row;
-    margin: 10px;
 }
 
-.col{
-    width: 55px;
-    height: 60px;
-    border: 1px solid black;
+.letter{
+    border: 1px solid rgb(255, 255, 255);
+    width: 80px;
+    height: 90px;
     margin: 10px;
-    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: white;
+}
+
+.keyboard{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+.line1, .line2, .line3{
+    display: flex;
+    flex-direction: row;
+}
+
+.key{
+    background-color: grey;
+    width: 60px;
+    height: 70px;
+    margin: 10px;
+    border-radius: 15px;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#big{
+    width:100px
 }
